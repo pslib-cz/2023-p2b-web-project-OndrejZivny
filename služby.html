@@ -20,6 +20,7 @@
                 <li ><a class="Container Button-nav" href="">Služby</a></li>
                 <li ><a class="Container Button-nav" href="">Onás</a></li>
                 <li ><a class="Container Button-nav" href="">Galerie</a></li>
+                <li onclick=zavritHAM() class="HAM--close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
             </menu>
             <menu class="NAV--menu">
                 <li class="Logo">
@@ -28,7 +29,7 @@
                     </figure>
                 </li>
                 <li class="title--nav"><p class="title">Služby</p></li>
-                <li onclick=otevriHAM() class="HAM--button"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li onclick=otevriHAM() class="HAM--button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 <li ><a class="Container Button-nav" href="">Home</a></li>
                 <li ><a class="Container Button-nav" href="">Služby</a></li>
                 <li ><a class="Container Button-nav" href="">Onás</a></li>
@@ -159,18 +160,24 @@
     </main>
     <footer>
         <div class="GRU--dokumenty">
-            <div class="Container CON--obchodnipodminkyPDF">
-                <H5>Obchodní podmínky PDF</H5>
-                <p>Stáhnou se podrobné podmínky v PDF</p>
-            </div>
-            <div class="Container CON--spoluprace">
-                <H5>Spolupráce</H5>
-                <p>Stáhne se smlouva ke spolupráci v PDF</p>
-            </div>
-            <div class="Container CON--hledampraci">
-                <H5>Hledám Práci</H5>
-                <p>Stáhne se Pracovní smlouva. Před tím nám ale jště napište na e-mail:  kazma@gmail.com</p>
-            </div>
+            <a href="">
+                <div class="Container CON--obchodnipodminkyPDF">
+                    <H5>Obchodní podmínky PDF</H5>
+                    <p>Stáhnou se podrobné podmínky v PDF</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="Container CON--spoluprace">
+                    <H5>Spolupráce</H5>
+                    <p>Stáhne se smlouva ke spolupráci v PDF</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="Container CON--hledampraci">
+                    <H5>Hledám Práci</H5>
+                    <p>Stáhne se Pracovní smlouva. Před tím nám ale jště napište na e-mail:  kazma@gmail.com</p>
+                </div>
+            </a>
         </div>
         <div  class="zapati">
             <div>
@@ -196,4 +203,3 @@
         </div>
     </footer>
 </body>
-</html>
