@@ -6,11 +6,12 @@
     font-variation-settings:
     "slnt" 0;
     color: white;
-    
 }
 
 body{
     background-color: #212121;
+    margin: 0;
+    width: 100vw;
 }
 
 .zapati{
@@ -18,6 +19,7 @@ body{
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100vw;
 }
 
 .Container{
@@ -90,6 +92,7 @@ menu{
     width: 60px;
     margin:0;
     border-radius: 5px;
+    left: auto;
 }
 .title{
     margin: 0;
@@ -100,72 +103,53 @@ menu{
     align-self:center ;
 }
 .Button-nav{
-    
+    display: flex;
     margin: 0;
     padding: 10px;
-    padding-left: 20px;
-    padding-right: 20%;
+    justify-content: center;
     text-decoration: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5em;
     
 }
 
-.hammenu{
-    border-radius: 5px;
+
+
+.HAM--menu{
     display: none;
-    flex-direction: column;
     position: fixed;
-    top: 0;
-    right: 0;
+    width: 100vw;
     height: 100vh;
-    width: 250px;
-    padding: 20px;
-    z-index: 100;
-    background-color: #151515;
-    align-items: flex-start;
+    background-color: #212121;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding-top: 7em;
 }
 
-.hammenu li{
-    height: 50px;
-    width: 100%;
-}
 
-.hammenu .Button-nav{
-    display: block;
-    width: auto;
-}
-
-.hammenu .Logo{
-    margin-bottom: 10px;
-    height: fit-content;
-}
-.hammenu .Figure--foto--logo{
-    width: 100%;
-    height: auto;
-}
-.hammenu .Figure--foto--logo a img{
-    border-radius: 20px;
-}
 .Button-nav:hover{
     background: linear-gradient(to right,#CE0BA4, #00B2FF) padding-box,linear-gradient(to right, #CE0BA4, #00B2FF) border-box;
 }
 
 
+.img--logo{
+    border-radius: 5px;
+}
+
 .NAV--menu{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.NAV--menu .Button-nav{
-    display: none;
-   
-}
+
 .NAV--menu .title--nav{
     margin-left: auto;
     margin-right: auto;
 }
-.NAV--menu .Logo img{
-    left: auto;
-    border-radius: 5px;
-}
+
 
 .HAM--button{
     height: 60px;
@@ -173,14 +157,14 @@ menu{
     border-radius: 5px;
 }
 
-.hammenu .HAM--close{
-    margin-bottom: 30px;
-    margin-left: auto;
+.HAM--close{
+    position: absolute;
+    top: 2em;
+    right: 2em;
     width: 50px;
     background: linear-gradient(0.12turn, #CE0BA4, #00B2FF);
     border-radius: 5px;
-    margin-top: auto;
-}
+} 
 
 
 
@@ -360,7 +344,9 @@ menu{
 
 
 
-
+    .HAM--close{
+        display: none;
+    }
 
 
 
@@ -377,8 +363,19 @@ menu{
         height: 40px;
         border-radius: 5px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
         align-items: center;
+    }
+    .HAM--menu{
+        display: flex;
+        background-color: transparent;
+        position: static;
+        padding: 0;
+        width: auto;
+        height: auto;
+        top: auto;
+        left: auto;
+        
     }
     
     .NAV--menu a{
