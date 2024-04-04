@@ -1,11 +1,12 @@
 *{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 200;
     font-style: normal;
     font-variation-settings:
     "slnt" 0;
     color: white;
+
 }
 
 body{
@@ -20,6 +21,14 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
+}
+.zapati ul{
+    padding-left: 10px;
+    list-style: none;
+    margin-right: 30px;
+}
+.zapati ul li{
+    margin-bottom: 10px;
 }
 
 .Container{
@@ -277,9 +286,35 @@ menu{
 }
 
 
+
+
+.img--ondrej{
+    aspect-ratio: 1/1;
+}
+.img--jozef{
+    aspect-ratio: 1/1;
+}
+
+
+.Tittle--container{
+    font-size: 30px;
+    font-weight: 500;
+}
+.TIT--under{
+    font-size: 20px;
+}
+
+
 @media only screen and (min-width: 750px) {
     
-
+    .zapati{
+        background: linear-gradient(#CE0BA4, #00B2FF);
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+    }
+    
     .CON--Servicies h1 {
         font-size: 70px;
     }
@@ -289,7 +324,7 @@ menu{
     }
 
     p{
-        font-size: 30px;
+        font-size: 16px;
         text-align: center;
     }
     .GRU--dokumenty p{
@@ -297,13 +332,13 @@ menu{
     }
 
     h2{
-        font-size: 60px;
+        font-size: 40px;
         margin: 0;
         margin-bottom: 10px;
     }
 
     h3{
-        font-size: 50px;
+        font-size: 30px;
         margin: 0;
         margin-bottom: 10px;
     }
@@ -339,7 +374,11 @@ menu{
         font-size: 50px;
     }
 
-
+    .Tittle--container{
+        font-size: 50px;
+        margin-bottom:20px; 
+        margin: 20px;
+    }
 
 
 
@@ -435,6 +474,7 @@ menu{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin-bottom: 40px;
+        width: 100%;
     }
     .CON--obchodnipodminkyPDF{
         margin: 10px;
@@ -460,8 +500,7 @@ menu{
         justify-content: center;
     }
 
-
-
+    
 
     .CON--ZAM--ondrej{
         display: grid;
@@ -469,10 +508,24 @@ menu{
         
     }
     
-
-
+    .CON--ZAM--ondrej p, .CON--ZAM--ondrej h3{
+        text-align: left;
+    } 
+    .CON--ZAM--jozef p, .CON--ZAM--jozef h3{
+        text-align: left;
+    } 
     .CON--ZAM--jozef{
         display: grid;
         grid-template-columns: 1fr 300px;
+    }
+
+
+    .TIT--servis{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .TIT--zivotaspe{
+        font-size: 20px;
+        font-weight: 300;
     }
 }

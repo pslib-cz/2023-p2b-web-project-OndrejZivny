@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/styl.css">
+    <script src="./JS/hamburger.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="Container">
+            
+            <menu class="NAV--menu">
+                
+                <figure class="Figure--foto--logo">
+                    <a href="/index.html"><img class="img--responzive img--logo" src="./media/Logo.jpg" alt="Logo" class="Logo--navbar"></a>
+                </figure>
+                
+                <h1 class="title">Payment</h1>
+                <li onclick=otevriHAM() class="HAM--button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <div class="HAM--menu">
+                    <li ><a class="Container Button-nav" href="#">Home</a></li>
+                    <li ><a class="Container Button-nav" href="./sluzby.html">Služby</a></li>
+                    <li ><a class="Container Button-nav" href="./O_nas.html">O nás</a></li>
+                    <li ><a class="Container Button-nav" href="#">Galerie</a></li>
+                    <li onclick=zavritHAM() class="HAM--close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                </div>
+            </menu>
+        </nav>
+    </header>
+    <main>
+        <div class="Container">
+            <p>Name</p>
+            <div>
+                <label>First name</label>
+                <input type="text" id="jmeno" name="jmeno" placeholder="Adam">
+                <label>Last name</label>
+                <input type="text" id="jmeno" name="prijmeni" placeholder="Novak">
+            </div>
+            <p>Card</p>
+            <div>
+                <label>Card number</label>
+                <input type="text" id="jmeno" name="jmeno" placeholder="XXXX XXXX XXXX XXXX">
+                <label>CVV</label>
+                <input type="text" id="jmeno" name="jmeno" placeholder="XXX">
+                <label>Exparation Date</label>
+                <input type="text" id="jmeno" name="jmeno" placeholder="MM/DD">
+            </div>
+        </div>
+    </main>
+</body>
