@@ -299,7 +299,9 @@ menu{
     text-align: center;
 }
 
-
+.CON--codelame p{
+    text-align: center;
+}
 
 
 .img--ondrej{
@@ -395,9 +397,44 @@ label{
     aspect-ratio: 1/1;
 }
 
-.img--gallery:hover{
-
+.TIT--codelame{
+    font-size: 30px;
+    font-weight: 700;
 }
+
+.codelame--textole{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    height: 3em;
+}
+
+.codelame--textole .codelame--text{
+    text-align: right;
+    font-size: 20px;
+    margin: 0;
+    align-self: center;
+    margin-right: 1em;
+}
+
+.codelame--textole a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.12turn, #CE0BA4, #00B2FF);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    max-width: 500px;
+}
+.oursevice--text{
+    margin: 0;
+}
+
+
+
+
+
 
 
 
@@ -648,4 +685,36 @@ label{
         margin: 0;
         width: auto;
     }
+
+
+    .CON--codelame{
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        
+    }
+    
+    .CON--codelame p{
+        text-align: left;
+    } 
+
+    .img--vislic{
+        grid-area: 1/2/3/3;
+    }
+
+    .oursevice--text{
+        font-size: 2em;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="cz">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +11,23 @@
     <header>
         <nav class="Container">
             <menu class="NAV--menu">
-                
-                <figure class="Figure--foto--logo">
-                    <a href="/index.html"><img class="img--responzive img--logo" src="./media/Logo.jpg" alt="Logo" class="Logo--navbar"></a>
-                </figure>
-                
-                <h1 class="title">Služby</h1>
+                <li>
+                    <figure class="Figure--foto--logo">
+                        <a href="/index.html"><img class="img--responzive img--logo" src="./media/Logo.jpg" alt="Logo" ></a>
+                    </figure>
+                </li>
+                <li>
+                    <h1 class="title">Služby</h1>
+                </li>
                 <li onclick=otevriHAM() class="HAM--button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                
                 <div class="HAM--menu">
-                    <li ><a class="Container Button-nav" href="#">Home</a></li>
+                    <li ><a class="Container Button-nav" href="./index.html">Home</a></li>
                     <li ><a class="Container Button-nav" href="./sluzby.html">Služby</a></li>
-                    <li ><a class="Container Button-nav" href="./O_nas.html">O nás</a></li>
-                    <li ><a class="Container Button-nav" href="./galerie.html">Galerie</a></li>
+                    <li ><a class="Container Button-nav" href="./O_nas.html">O nás</a></li>                        <li ><a class="Container Button-nav" href="./galerie.html">Galerie</a></li>
                     <li onclick=zavritHAM() class="HAM--close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 </div>
+                
             </menu>
         </nav>
     </header>

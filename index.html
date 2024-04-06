@@ -1,140 +1,146 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeleWiev</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <title>©TeleWiev</title>
+    <link rel="stylesheet" href="./css/styl.css">
+    <script src="./JS/hamburger.js"></script>
 </head>
 <body>
     <header>
         <nav class="Container">
-            <menu>
-                <li class="Logo">
+            <menu class="NAV--menu">
+                <li>
                     <figure class="Figure--foto--logo">
-                        <a href="/index.html"><img class="img--responzive img--logo" src="./media/Logo.jpg" alt="Logo" class="Logo--navbar"></a>
+                        <a href="/index.html"><img class="img--responzive img--logo" src="./media/Logo.jpg" alt="Logo" ></a>
                     </figure>
                 </li>
-                <li><p class="title">Hlavní stránka</p></li>
-                <li class="Button-nav"><a class="Container Button-nav" href="">Home</a></li>
-                <li class="Button-nav"><a class="Container Button-nav" href="">Služby</a></li>
-                <li class="Button-nav"><a class="Container Button-nav" href="">Onás</a></li>
-                <li class="Button-nav"><a class="Container Button-nav" href="">Galerie</a></li>
-            </menu>
-        </nav>
-        <div class="Container Conteiner--first">
-            
-            <figure class="Figure--foto--one">
-                <img class="img--responzive img--one" src="./media/Main foto 1.jpg" alt="vysílač v lese">
-            </figure>
-            
-            <div class="Text-left-mainind">
-                <h1>TeleWiev</h1>
-                <h2>Spolehlivá správa  a oprava vysílačů v Česku</h2>
-                <div class="Button-1st-ind">
-                    <a href="" class="Button Button-1st">Nákup</a>
+                <li>
+                    <h1 class="title">Home</h1>
+                </li>
+                <li onclick=otevriHAM() class="HAM--button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="60" viewBox="0 -960 960 960" width="60"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                
+                <div class="HAM--menu">
+                    <li ><a class="Container Button-nav" href="./index.html">Home</a></li>
+                    <li ><a class="Container Button-nav" href="./sluzby.html">Služby</a></li>
+                    <li ><a class="Container Button-nav" href="./O_nas.html">O nás</a></li>                        <li ><a class="Container Button-nav" href="./galerie.html">Galerie</a></li>
+                    <li onclick=zavritHAM() class="HAM--close"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="50" viewBox="0 -960 960 960" width="50"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 </div>
                 
-            </div>
-        </div>
+            </menu>
+        </nav>
     </header>
     <main>
-        
-        <div class="Container Conteiner--sec">
-            <h3 class="Tittle--container">Co děláme</h3>
-            <figure class="Figure--foto--two">
-                <img class="img--responzive img--two" src="./media/Foto main stránka 1.jpg" alt="pohled na vysílač ze zdola">
+        <div class="Container">
+            <figure class="img--border img--main--foto">
+                <img class="img--responzive img--borderradius" src="./media/Main foto 1.jpg" alt="Ondrej Zivny" class="Logo--navbar">
             </figure>
-            <div class="Text-left-secind">
-                <div >
-                    <p>Naše firma se zaměřuje na profesionální servis vysílačů a anténních systémů. Poskytujeme vše od diagnostiky a oprav po prav
-                    idelnou údržbu a kalibraci zařízení. S naším týmem zkušených techniků a moderním vybavením garantujeme spolehlivost a optimální 
-                    výkon.  Každý zákazník obdrží podrobný protokol o provedených pracích, aby měl přehled o stavu svých zařízení. Naše práce zahrnuje opravy a 
-                    údržbu na věžích i budovách, ať už ve výškách nebo na zemi. </p>
-                </div>
-                <div class="Conteiner--sec--buying">
-                    <p class="Conteiner--sec--buying--text">220$/month</p>
-                    <a href="" class="Button Button-2st">Nákup</a>
-                </div>
+            <div>
+                <p>TeleWiev</p>
+                <p>Spolehlivá správa  a oprava vysílačů v Česku</p>
+                <a href="./payment.html">Nákup</a>
             </div>
         </div>
-        <div class="Container Conteiner--thr">
-            <h3 class="Tittle--container">Our services</h3>
-            <p>from 60$ per month</p>
-        </div>
-        <div class="wrapper">
-            <div class="nabidka--220 Container">
-                <h3 class="Tittle--container">220$/month</h3>
-                <ul class="vyhody">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="Conteiner--sec--buying">
-                    <p class="Conteiner--sec--buying--text">Buy now:</p>
-                    <a href="" class="Button Button-2st">220$</a>
+        <div class="CON--codelame Container">
+            <div> 
+               <p class="TIT--codelame">Co děláme</p>
+               <p>
+                    Naše firma se zaměřuje na profesionální servis vysílačů a anténních systémů. Poskytujeme vše od diagnostiky 
+                    a oprav po pravidelnou údržbu a kalibraci zařízení. S naším týmem zkušených techniků a vybavením garantujeme 
+                    spolehlivost a optimální výkon .  Každý zákazník obdrží podrobný protokol o provedených pracích, aby měl přehled 
+                    o stavu svých zařízení. Naše práce zahrnuje opravy a údržbu na věžích i budovách, ať už ve výškách nebo na zemi. 
+               </p>
+               
+           </div>  
+           <figure class="img--border img--vislic">
+               <img class="img--responzive img--borderradius " src="./media/Foto main stránka 1.jpg" alt="Ondrej Zivny" class="Logo--navbar">
+           </figure>
+           <div class="codelame--textole">
+                <p class="codelame--text">60$/month: </p>
+                <a href="./payment.html">Nákup</a>
+            </div>
+       </div>
+       <div class="Container">
+            <p class="Tittle--container">our services</p>
+            <p class="oursevice--text">from 60$ per month</p>
+       </div>
+       <div class="GRU--nabidky">
+            <div>
+                <div class="nabidka Container">
+                    <p class="Tittle--container">220$/ month</p>
+                    <ul class="vyhody">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="nabidka--dole">
+                        <p>Buy now:</p>
+                        <a href="./payment.html">220$</a>
+                    </div>
                 </div>
             </div>
-            <div class="nabidka--120 Container">
-                <h3 class="Tittle--container">120$/month</h3>
-                <ul class="vyhody">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="Conteiner--sec--buying">
-                    <p class="Conteiner--sec--buying--text">Buy now:</p>
-                    <a href="" class="Button Button-2st">120$</a>
+            <div>
+                <div class="nabidka Container">
+                    <p class="Tittle--container">120$/ month</p>
+                    <ul class="vyhody">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="nabidka--dole">
+                        <p>Buy now:</p>
+                        <a href="./payment.html">120$</a>
+                    </div>
                 </div>
             </div>
-            <div class="nabidka--60 Container">
-                <h3 class="Tittle--container">60$/month</h3>
-                <ul class="vyhody">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-                <div class="Conteiner--sec--buying">
-                    <p class="Conteiner--sec--buying--text">Buy now:</p>
-                    <a href="" class="Button Button-2st">600$</a>
+            <div>
+                <div class="nabidka Container">
+                    <p class="Tittle--container">&nbsp; 60$/ month</p>
+                    <ul class="vyhody">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <div class="nabidka--dole">
+                        <p>Buy now:</p>
+                        <a href="./payment.html">60$</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div>
-            <ul>
-                <li><a href="">Instagram</a></li>
-                <li><a href="">Stara stranka</a></li>
-                <li><a href="">Galerie</a></li>
-                <li><a href="">Nabídka služeb</a></li>
-                <li><a href="">Home</a></li>
-                <li><a href="">O nás</a></li>
-            </ul>
-        </div>
-        <div>
-            <ul>
-                <li>Email: kazma@gmail.com</li>
-                <li>Telefon: +420 777 696 420</li>
-                <li>Ičo: 135465132086 44651321</li>
-                <li>Dič:6454160320 16156156106</li>
-                <li>Transparentní účet:1200-6551403</li>
-                <li>©TeleWiev s. r. o. </li>
-            </ul>
+        <div  class="zapati">
+            <div>
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Stara stranka</a></li>
+                    <li><a href="">Galerie</a></li>
+                    <li><a href="">Nabídka služeb</a></li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">O nás</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>Email: kazma@gmail.com</li>
+                    <li>Telefon: +420 777 696 420</li>
+                    <li>Ičo: 135465132086 44651321</li>
+                    <li>Dič:6454160320 16156156106</li>
+                    <li>Transparentní účet:1200-6551403</li>
+                    <li>©TeleWiev s. r. o. </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
-</html>
