@@ -431,8 +431,22 @@ label{
     margin: 0;
 }
 
+.CON--index--contejner{
+    display: grid;
+    grid-template-rows: 400px 1fr;
 
-
+}
+.CON--index--contejner a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0.12turn, #CE0BA4, #00B2FF);
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 600;
+    height: 50px;
+}
 
 
 
@@ -709,10 +723,19 @@ label{
 
 
 
+    .CON--index--contejner{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .CON--index--contejner div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-
-
-
+    .img--main--foton--1{
+        max-height: 600px;
+    }
 
 
 
