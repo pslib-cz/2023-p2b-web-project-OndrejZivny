@@ -256,7 +256,7 @@ menu{
     color: rgb(255, 255, 255);
 }
 .CON--obchodnipodminkyPDF{
-    background-image: url(../media/dokumnt\ obr\ obchodní\ podmínky.jpg);
+    background-image: url(../media/dokumnt-obr-obchodní-podmínky.avif);
     background-size: cover;
     background-position: center;
     border: 3px solid #ce0ba4;
@@ -264,14 +264,14 @@ menu{
 }
 
 .CON--spoluprace{
-    background-image: url(../media/Default_two_shaking_hands_0.jpg);
+    background-image: url(../media/Default_two_shaking_hands_0.avif);
     background-size: cover;
     background-position: center;
     border: 3px solid #00B2FF;
 }
 
 .CON--hledampraci{
-    background-image: url(../media/Default_work_3.jpg);
+    background-image: url(../media/Default_work_3.avif);
     background-size: cover;
     background-position: center;
     border: 3px solid #ce0ba4;
@@ -447,6 +447,10 @@ label{
     font-weight: 600;
     height: 50px;
 }
+
+
+
+
 
 
 
