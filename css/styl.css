@@ -1,13 +1,4 @@
-*{
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 200;
-    font-style: normal;
-    font-variation-settings:
-    "slnt" 0;
-    color: white;
 
-}
 
 body{
     background-color: #212121;
@@ -448,9 +439,13 @@ label{
     height: 50px;
 }
 
+.vyhody li{
+    margin-bottom: 10px;
+}
 
-
-
+.img--main--foton--1{
+    object-position: top;
+}
 
 
 
@@ -518,6 +513,8 @@ label{
         width: 24vw;
         margin-left: 10px;
         margin-right: 10px;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
     }
     .nabidka--dole a{
         padding-left: 5vw;
@@ -741,7 +738,7 @@ label{
         max-height: 600px;
     }
 
-
+    
 
 
 }
